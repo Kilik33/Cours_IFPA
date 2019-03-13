@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+   <meta charset="UTF-8">
+   <title>PANNEAU DE CONTROLE</title>
+   <meta name="author" content="kilik33">
+   <!-- Compatibilité IE -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous">
+   <!-- GoogleFonts -->
+   <link href="https://fonts.googleapis.com/css?family=Exo+2|Roboto|Varela+Round" rel="stylesheet">
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+   <!-- CSS Perso -->
+   <link rel="stylesheet" href="CSS/style_control.css">
+</head>
+
+<body>
+   <!-- debut page -->
+   <header>
+      <h1 class="p3">PANNEAU DE CONTROLE</h1>
+   </header>
+
+   <section id="sidebar">
+      <div class="inner p1">
+         <nav>
+            <ul>
+               <li><a href="#post">Post</a></li>
+               <li><a href="#utilisateur">Utilisateurs</a></li>
+               <li><a href="#categorie">Catégories</a></li>
+               <li><a href="#intro">Configuration</a></li>
+               <li><a href="#three">Administrateur</a></li>
+            </ul>
+         </nav>
+      </div>
+   </section>
+
+   <div class="info col-4 offset-2">
+      <div class="alert alert-success" role="alert">
+         Vous avez XX
+         <!-- TODO --> utilisateurs sur votre site.
+         <i class="fas fa-users fa-3x"></i>
+         <button type="button" class="btn btn-outline-success">Voir</button>
+      </div>
+      <div class="alert alert-success" role="alert">
+         Vous avez XX
+         <!-- TODO --> utilisateurs connectés.
+         <i class="fas fa-user-alt fa-3x"></i>
+         <button type="button" class="btn btn-outline-success">Voir</button>
+      </div>
+      <div class="alert alert-success" role="alert">
+         Gérer les utilisateurs.
+         <i class="fas fa-users-cog fa-3x"></i>
+         <button type="button" class="btn btn-outline-success">Gérer</button>
+      </div>
+
+   </div>
+   <div class="erreur col-9 offset-2">
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+         <strong>ATTENTION!</strong> Vous avez des erreurs sur votre site
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+         </button>
+      </div>
+
+      <footer>
+         <p class="p2">v1.0</p>
+      </footer>
+
+
+
+
+
+      <!-- fin page -->
+      <!-- Script Externes -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+         crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+         crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+         crossorigin="anonymous"></script>
+      <!-- Wow Animate -->
+      <script src="js/wow.min.js"></script>
+      <script>
+         new WOW().init();
+      </script>
+
+      <script src="Javascript/script_control.js"> </script>
+
+</body>
+
+</html>

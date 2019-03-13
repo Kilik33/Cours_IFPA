@@ -1,0 +1,197 @@
+/* ****** COMMUN ****** */
+
+
+.p1{
+   font-family: 'Roboto', sans-serif;
+}
+.p2{
+   font-family: 'Varela Round', sans-serif;
+}
+.p3{
+   font-family: 'Exo 2', sans-serif;
+}
+
+/* BARRE DE NAVIGATION GAUCHE ----- DEBUT*/
+
+#sidebar {
+   padding:1em 2em  1em 1em ;
+   background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   cursor: default;
+   height: 100vh;
+   left: 0;
+   position: fixed;
+   text-align: right;
+   top: 0;
+   width: 15em;
+   z-index: 10000;
+}
+
+   #sidebar > .inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: opacity 1s ease;
+      min-height: 100%;
+      opacity: 1;
+      width: 100%; 
+   }
+
+   #sidebar nav > ul {
+      list-style: none;
+      padding: 0;
+   }
+
+      #sidebar nav > ul > li {
+         margin: 1em 2em 0 0 ;
+         opacity: 1;
+      }
+
+/* Lien et texte du menu */
+   #sidebar nav a {
+      -moz-transition: color 0.5s ease;
+      -webkit-transition: color 0.5s ease;
+      -ms-transition: color 0.5s ease;
+      transition: color 0.5s ease;
+      border: 0;
+      display: block;
+      font-size: 0.8em;
+      font-weight: bold;
+      letter-spacing: 0.25em;
+      line-height: 1.75;
+      outline: none;
+      padding: 1.35em 0;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #0d176c;
+   }
+
+      #sidebar nav a:before, #sidebar nav a:after {
+         border-radius: 0.2em;
+         bottom: 0;
+         content: '';
+         height: 0.3em;
+         position: absolute;
+         right: 0;
+         width: 100%;
+      }
+/* Barre sous le texte */
+      #sidebar nav a:before {
+         background: #0d176c;
+      }
+      #sidebar nav a:after {
+      }
+
+      #sidebar nav a:hover {
+         color: #c5103f;
+      }
+
+      #sidebar nav a.active {
+         color: #ffffff;
+      }
+
+         #sidebar nav a.active:after {
+            max-width: 100%;
+         }
+
+   body.is-preload #sidebar > .inner {
+      opacity: 0;
+   }
+
+   body.is-preload #sidebar nav ul li {
+      -moz-transform: translateY(2em);
+      -webkit-transform: translateY(2em);
+      -ms-transform: translateY(2em);
+      transform: translateY(2em);
+      opacity: 0;
+   }
+/* BARRE DE NAVIGATION GAUCHE ----- FIN*/
+
+/* ****** BLOG ****** */
+
+/* TITRE DE LA PAGE ----- DEBUT*/
+h1{
+   text-align: center;
+}
+/* TITRE DE LA PAGE ----- FIN*/
+
+/* INTRO ----- DEBUT*/
+article{
+   margin-left: 20%;
+}
+/* INTRO ----- FIN*/
+
+/* BAS DE PAGE ----- DEBUT*/
+footer{
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   text-align: right;
+}
+/* BAS DE PAGE ----- FIN*/
+
+
+@media screen and (max-width: 1280px) {
+   #sidebar {
+      height: 3.5em;
+      left: 0;
+      line-height: 3.5em;
+      overflow: hidden;
+      padding: 0;
+      text-align: center;
+      top: 0;
+      width: 100%;
+   }
+   
+   #sidebar > .inner {
+      -moz-flex-direction: row;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -moz-align-items: -moz-stretch;
+      -webkit-align-items: -webkit-stretch;
+      -ms-align-items: -ms-stretch;
+      align-items: stretch;
+      height: inherit;
+      line-height: inherit;
+   }
+   
+   #sidebar nav {
+      height: inherit;
+      line-height: inherit;
+   }
+   
+   #sidebar nav ul {
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      height: inherit;
+      line-height: inherit;
+      margin: 0;
+   }
+   
+   #sidebar nav ul li {
+      display: block;
+      height: inherit;
+      line-height: inherit;
+      margin: 0 0 0 2em;
+      padding: 0;
+   }
+   
+   #sidebar nav a {
+      height: inherit;
+      line-height: inherit;
+      padding: 0;
+   }
+   
+   #sidebar nav a:after {
+      background-image: none;
+      background-color: #b74e91;
+   }
+   
+}
+
+/* TITRE DE LA PAGE */

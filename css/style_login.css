@@ -1,0 +1,94 @@
+/* Formulaire entier */
+form {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 1em;
+   /* border: 2px solid black; */
+   width: 60%;
+   margin: auto;
+}
+
+/* Titre en haut de la page */
+h1 {
+   text-align: center;
+   font-family: 'Coiny', cursive;
+   font-size: 2em;
+   margin-top: 30px !important;
+}
+
+/* Surbrillance des champs texte */
+input:focus {
+   box-shadow: 5px 1px 10px #92C7F6 !important;
+}
+input[type="checkbox"] {
+   box-shadow: none !important;
+}
+
+/*Alignement du placeholder  */
+input::-webkit-input-placeholder {
+   text-align: center;
+}
+
+/* Alignement des boutons envoyer et annuler */
+.button-group {
+   width: 50%;
+   margin: auto;
+   display: flex;
+   justify-content: space-around;
+}
+
+/* Flex pour cahque élément du formulaire */
+.form-group {
+   display: flex;
+   flex-wrap: wrap
+}
+
+/* Mise en place des flex pour les champs de formulaire */
+.form-control{
+ flex: 90%;
+}
+
+/* inscription sous les champs */
+p{
+   flex: 5%;
+   color: red;
+}
+small{
+   flex: 90%;
+   margin-top: -5px !important;
+   font-size: 0.7em !important;
+}
+.text-muted
+{
+   color:red !important;
+}
+
+/* Surbrillance pour la validation ou non des champs */
+.valid
+{
+   background-color: #cef7c9;
+   border-color: #8af97d;
+   outline: 0;
+   box-shadow: 0 0 0 0.2rem #8af97d;
+}
+.novalid
+{
+   background-color: #f7c9c9;
+   border-color: #ee4d4d;
+   outline: 0;
+   box-shadow: 0 0 0 0.2rem #ee4d4d;
+}
+
+/* DIV caché */
+.cache
+{
+   text-align: center;
+}
+
+.newsletter--
+{
+   margin: auto;
+   margin-top: -100%;
+   width: 80%;
+   text-align: center;
+   transition: 0.8s;
+}
